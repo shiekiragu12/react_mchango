@@ -1,0 +1,56 @@
+$splashscreen-primary-color: #cb6ce6;
+$splashscreen-secondary-color: #2ecc71;
+
+.splashscreen {
+    background-image: url('../images/homescreen.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .welcomeContent {
+        text-align: center;
+        margin-bottom: 20px;
+        // background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 30px;
+        padding: 20px;
+        // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #e1a0f436;
+        backdrop-filter: blur(20px);
+        width: 650px;
+
+        h2 {
+            color: $splashscreen-primary-color;
+            margin-bottom: 20px;
+        }
+
+        .loginBtn {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 30px;
+            border: 1px solid $splashscreen-primary-color;
+            background-color: white;
+            color: $splashscreen-primary-color;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $splashscreen-primary-color;
+                color: white;
+            }
+        }
+    }
+
+    .formDisplay {
+
+
+        h2 {
+            color: $splashscreen-primary-color;
+        }
+    }
+}
